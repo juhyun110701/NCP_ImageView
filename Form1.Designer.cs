@@ -33,8 +33,8 @@
             this.picImg = new System.Windows.Forms.PictureBox();
             this.lblNum = new System.Windows.Forms.Label();
             this.imgList = new System.Windows.Forms.ImageList(this.components);
-            this.btnPrev = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
+            this.BtnPrev = new System.Windows.Forms.Button();
+            this.BtnNext = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picImg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,37 +105,39 @@
             this.imgList.Images.SetKeyName(41, "42.JPG");
             this.imgList.Images.SetKeyName(42, "43.JPG");
             // 
-            // btnPrev
+            // BtnPrev
             // 
-            this.btnPrev.Location = new System.Drawing.Point(12, 198);
-            this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(85, 38);
-            this.btnPrev.TabIndex = 2;
-            this.btnPrev.Text = "이전";
-            this.btnPrev.UseVisualStyleBackColor = true;
+            this.BtnPrev.Location = new System.Drawing.Point(12, 198);
+            this.BtnPrev.Name = "BtnPrev";
+            this.BtnPrev.Size = new System.Drawing.Size(85, 38);
+            this.BtnPrev.TabIndex = 2;
+            this.BtnPrev.Text = "이전";
+            this.BtnPrev.UseVisualStyleBackColor = true;
+            this.BtnPrev.Click += new System.EventHandler(this.BtnPrev_Click_1);
             // 
-            // btnNext
+            // BtnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(220, 198);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(85, 38);
-            this.btnNext.TabIndex = 3;
-            this.btnNext.Text = "다음";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.BtnNext.Location = new System.Drawing.Point(220, 198);
+            this.BtnNext.Name = "BtnNext";
+            this.BtnNext.Size = new System.Drawing.Size(85, 38);
+            this.BtnNext.TabIndex = 3;
+            this.BtnNext.Text = "다음";
+            this.BtnNext.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(319, 254);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.btnPrev);
+            this.Controls.Add(this.BtnNext);
+            this.Controls.Add(this.BtnPrev);
             this.Controls.Add(this.lblNum);
             this.Controls.Add(this.picImg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "사진첩";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picImg)).EndInit();
             this.ResumeLayout(false);
 
@@ -146,8 +148,8 @@
         private System.Windows.Forms.PictureBox picImg;
         private System.Windows.Forms.Label lblNum;
         private System.Windows.Forms.ImageList imgList;
-        private System.Windows.Forms.Button btnPrev;
-        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button BtnPrev;
+        private System.Windows.Forms.Button BtnNext;
     }
 }
 
